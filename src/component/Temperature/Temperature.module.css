@@ -1,0 +1,41 @@
+.title{
+   color: #fff;
+   display: block;
+   font-size: .7em;
+   opacity: .4;
+   padding-bottom: .5em;
+}
+.TemperatureCard{
+   background: linear-gradient(200deg,  #323886, #142456 );
+   border-radius: .2em;
+   height: 215px;
+}
+.cardInner{
+   display: flex;
+   height: 100%;
+   justify-content: space-around;
+}
+.cardText{
+   font-size: .6em;
+}
+.cardLeft{
+   align-items: space-around;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+}
+.cardRight{
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+}
+.margin{
+   margin: 1em 0 0;
+}
+.noMargin{
+   margin: 0;
+   opacity: .4;
+}

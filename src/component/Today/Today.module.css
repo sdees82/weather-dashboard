@@ -1,0 +1,12 @@
+.todayCard{
+    background: linear-gradient(200deg,  #323886, #142456 );
+    border-radius: .2em;
+    height: 350px;
+    width: 68%;
+}
+
+@media screen and (max-width: 900px){
+    .todayCard{
+        width: 100%;
+    }
+}

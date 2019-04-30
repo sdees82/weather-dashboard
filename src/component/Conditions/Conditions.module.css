@@ -1,0 +1,21 @@
+.conditionsCard{
+    align-items: center;
+    background: linear-gradient(200deg,  #323886, #142456 );
+    border-radius: .2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 115px;
+}
+.conditionsCardInner{
+    padding: 2em 0;
+}
+.cardText{
+    font-size: .6em;
+ }
+ .noMargin{
+    margin: 0;
+ }
+.op{
+    opacity: .4;
+}

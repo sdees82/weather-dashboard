@@ -1,0 +1,14 @@
+.cardWrapperOuter{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    margin: 1em 0 0;
+  }
+
+  @media screen and (max-width: 900px){
+    .cardWrapperOuter{
+      flex-direction: column;
+      height: 100%;
+    }
+  }
