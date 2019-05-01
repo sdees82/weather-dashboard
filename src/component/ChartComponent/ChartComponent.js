@@ -18,7 +18,11 @@ const RenderBarChart = ({hourlyTemps}) => {
         :<p>Loading</p>}
         <YAxis width={30} dataKey="temp" stroke="#8884d8" tick={{fontSize: 12, fill: '#fff'}}/>
         <XAxis height={30} dataKey="time" stroke="#8884d8" tick={{fontSize: 12, fill: '#fff'}}/>
-        <Tooltip wrapperStyle={{background: 'red', }} itemStyle={{padding: '0'}} contentStyle={{color: "#000"}}/>
+        <Tooltip viewBox={{background: '#000'}} labelStyle={{color: '#fff'}} 
+        cursor={{ stroke: '#8884d8', strokeWidth: 2 }} 
+        wrapperStyle={{borderRadius: '5px', background: 'transparent'}} 
+        itemStyle={{padding: '0', color: '#fff'}} 
+        contentStyle={{fontSize: '.5em', borderRadius: '5px',background: 'transparent',}}/>
       </AreaChart>
       </ResponsiveContainer>
     )

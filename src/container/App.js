@@ -56,7 +56,7 @@ getLocation = ()=>{
             const hourly = data.forecast.forecastday[0].hour.map((val, index) => {
                 return {temp: Math.floor(val.temp_f), time: `${index}:00`};
             }).filter(val => val !== undefined);
-            delete hourly[0].time;
+            // delete hourly[0].time;
             this.setState({hourlyTemps: hourly});
           })
           .catch(error => console.log(error));
