@@ -23,7 +23,7 @@ const Weather = ({currentTemp, currentConditions}) =>{
                         strokeWidth: 4
                     },
                     path: {
-                        stroke: "#527fbf",
+                        stroke: "#8884d8",
                         strokeWidth: 4
                     },
                     
@@ -33,23 +33,12 @@ const Weather = ({currentTemp, currentConditions}) =>{
                     />
                 </div>
                 </div>
-                {currentConditions.current !== undefined ? 
                 <div className={style.cardRight}>
                 <span>{`${Math.floor(currentConditions.current.feelslike_f)}°`}</span>
                 <p className={`${style.cardText} ${style.noMargin}`}>Feels like</p>
                 <span className={style.margin}>{`${currentConditions.current.humidity}%`}</span>
                 <p className={`${style.cardText} ${style.noMargin}`}>Humidity</p>
-            </div>
-            :
-            <div className={style.cardRight}>
-                     <span>76</span>
-                    <p className={style.cardText}>Outside</p>
-                    <span>23</span>
-                    <span className={style.cardText}>Humidity</span>
-                    
-                </div>    
-            }
-                
+            </div>     
             </div>
             </div>
         </React.Fragment>

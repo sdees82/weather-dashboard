@@ -58,6 +58,12 @@
   width: 23%;
 }
 
+.loading{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 700px;
+}
 @media screen and (max-width: 900px){
   .app{
     padding: 2em 0;

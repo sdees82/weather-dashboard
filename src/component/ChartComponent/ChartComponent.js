@@ -14,11 +14,11 @@ const RenderBarChart = ({hourlyTemps}) => {
         }}
       >
         <CartesianGrid  vertical={false} horizontal={false} stroke="green" tick="red"/>
-        {hourlyTemps.length !== 0 ? <Area base={100} type="monotone" dataKey="temp" stroke="#527fbf" fill="#2a337c" />
+        {hourlyTemps.length !== 0 ? <Area base={100} type="monotone" dataKey="temp" stroke="#8884d8" fill="#2a337c" />
         :<p>Loading</p>}
-        <YAxis width={30} dataKey="temp" stroke="#8884d8" tick={{fontSize: 12, fill: '#fff', opacity: '0.4',}}/>
-        <XAxis height={30} dataKey="time" stroke="#8884d8" tick={{fontSize: 12, fill: '#fff', opacity: '0.4'}}/>
-        <Tooltip wrapperStyle={{background: 'red', }} itemStyle={{background: 'green', padding: '0'}} contentStyle={{color: "#000"}}/>
+        <YAxis width={30} dataKey="temp" stroke="#8884d8" tick={{fontSize: 12, fill: '#fff'}}/>
+        <XAxis height={30} dataKey="time" stroke="#8884d8" tick={{fontSize: 12, fill: '#fff'}}/>
+        <Tooltip wrapperStyle={{background: 'red', }} itemStyle={{padding: '0'}} contentStyle={{color: "#000"}}/>
       </AreaChart>
       </ResponsiveContainer>
     )
