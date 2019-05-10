@@ -7,39 +7,40 @@ const Weather = ({currentTemp, currentConditions}) =>{
     return(
         <React.Fragment>
             <div className={`${style.TemperatureCard} ${style.border} ${style.background}`}>
-                <div className={style.cardInner}>
-                <div className={style.cardLeft}>
-                    <span className={style.title}>Temperature</span>
-                    <div style={{width: '130px'}}>
-                    <CircularProgressbar 
-                    styles={{
-                        width: '100px',
-                    text: {
-                        fill: '#fff',
-                        fontSize: '1em'
-                    },
-                    trail: {
-                        stroke: '#2a3a74',
-                        strokeWidth: 4
-                    },
-                    path: {
-                        stroke: "#8884d8",
-                        strokeWidth: 4
-                    },
-                    
-                    }}
-                        percentage={currentTemp}
-                        text={`${currentTemp}°`}
-                    />
-                </div>
-                </div>
-                <div className={style.cardRight}>
-                <span>{`${Math.floor(currentConditions.current.feelslike_f)}°`}</span>
-                <p className={`${style.cardText} ${style.noMargin}`}>Feels like</p>
-                <span className={style.margin}>{`${currentConditions.current.humidity}%`}</span>
-                <p className={`${style.cardText} ${style.noMargin}`}>Humidity</p>
-            </div>     
-            </div>
+                 <div className={style.cardInner}>
+                 <div className={style.cardLeft}>
+                     <span className={style.title}>Temperature</span>
+                     <div style={{width: '130px'}}>
+                     <CircularProgressbar 
+                     styles={{
+                         width: '100px',
+                     text: {
+                         fill: '#fff',
+                         fontSize: '1em'
+                     },
+                     trail: {
+                         stroke: '#2a3a74',
+                         strokeWidth: 4
+                     },
+                     path: {
+                         stroke: "#8884d8",
+                         strokeWidth: 4
+                     },
+                     
+                     }}
+                         percentage={currentTemp}
+                         text={`${currentTemp}°`}
+                     />
+                 </div>
+                 </div>
+                 <div className={style.cardRight}>
+                 <span>{`${Math.floor(currentConditions.current.feelslike_f)}°`}</span>
+                 <p className={`${style.cardText} ${style.noMargin}`}>Feels like</p>
+                 <span className={style.margin}>{`${currentConditions.current.humidity}%`}</span>
+                 <p className={`${style.cardText} ${style.noMargin}`}>Humidity</p>
+             </div>     
+             </div>
+               
             </div>
         </React.Fragment>
     )

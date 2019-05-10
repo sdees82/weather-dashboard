@@ -50,7 +50,7 @@ getLocation = ()=>{
     fetch(`https://api.apixu.com/v1/forecast.json?key=f20edac2fb21459a95e131316192904&q=${lat},${long}&days=4`)
         .then(response => response.json())
         .then(data =>{
-          fetch("https://api.apixu.com/v1/history.json?key=f20edac2fb21459a95e131316192904&q=detroit&dt=2019-04-30")
+          fetch("https://api.apixu.com/v1/history.json?key=f20edac2fb21459a95e131316192904&q=detroit&dt=2019-05-10")
           .then(response => response.json())
           .then(data => {
             const hourly = data.forecast.forecastday[0].hour.map((val, index) => {
